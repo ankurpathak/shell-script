@@ -1,15 +1,8 @@
 #!/bin/bash
-echo -e "Enter file name: \c";
-read file
-if [ -n "$file" -a -f "$file" ];
+read -p "Enter age: " age
+if [ "$age" -gt 18 ] && [ "$age" -lt 30 ];
 then
-  if [ -w "$file" ];
-  then
-    echo "Enter some data. Press cntrl+d to exit";
-    cat >> $file;
-  else
-    echo "$file does not have write permission";
-  fi
+  echo "$age age is valid";
 else
-  echo "$file doesn't exist";
+  echo "$age age is not valid";
 fi
