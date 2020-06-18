@@ -8,4 +8,6 @@ echo "MY Home is $HOME"
 echo "MY BASH Process Id is $BASHPID"
 
 name='Ankur'
+10val=10
 echo "My name is $name"
+echo "10val is $10val"
