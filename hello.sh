@@ -1,8 +1,14 @@
 #!/bin/bash
-name='ankur';
-if [ "$name" = 'ankur' ];
+char='c';
+if [ "$char" = 'a' ];
 then
-  echo 'Condtion is true';
+  echo 'Character is a';
+elif [ "$char" = 'b' ];
+then
+ echo 'Character is b';
+elif [ "$char" = 'c' ];
+then
+ echo 'Character is c';
 else
-  echo 'Condition is false';
+  echo 'Characted is other';
 fi
