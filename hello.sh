@@ -1,5 +1,6 @@
 #!/bin/bash
-echo "$0 $1 $2 $3"
-args=("$@")
-echo "Command line arguments are: ${args[@]}"
-echo "No of Command line arguments are: ${#args[@]}"
+count=10
+if [ $count -eq 10 ];
+then
+  echo "Condition is true";
+fi
