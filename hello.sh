@@ -6,3 +6,6 @@ echo "MY Bash Version is $BASH_VERSION"
 echo "MY Present Working Directory is $PWD"
 echo "MY Home is $HOME"
 echo "MY BASH Process Id is $BASHPID"
+
+name='Ankur'
+echo "My name is $name"
