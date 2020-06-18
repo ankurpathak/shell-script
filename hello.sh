@@ -1,4 +1,2 @@
 #!/bin/bash
-echo 'Enter name'
-read
-echo "$REPLY"
+echo "Hello World"
