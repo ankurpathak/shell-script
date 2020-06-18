@@ -1,4 +1,4 @@
 #!/bin/bash
-echo 'Enter name'
-read name
-echo "Entered name: $name"
+echo 'Enter 3 names'
+read name name1 name2
+echo "Entered names are: $name $name1 $name2"
