@@ -1,4 +1,2 @@
 #!/bin/bash
-echo 'Enter name'
-read
-echo "Entered name: $REPLY"
+echo "$0 $1 $2 $3"
