@@ -1,3 +1,3 @@
 #!/bin/bash
-read -p 'Enter name ' name
-echo "Entered name: $name"
+read -p 'Enter many names ' -a names
+echo "Entered names are: ${names[@]}"
