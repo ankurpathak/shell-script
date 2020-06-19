@@ -1,16 +1,16 @@
 #!/bin/bash
-vehicle="$1";
-case "$vehicle" in
-  "car")
-  echo "You have a Car";
-  echo "Good Car";;
-  "bike")
-  echo "You have a Bike";
-  echo "Good Bike";;
-  "bus")
-  echo "Yoh have a Bus";
-  echo "Good Bus";;
-  "*")
-  echo "You have Notthing";
-  echo "Bad";;
+LANG=C;
+echo -e "Enter character: \c";
+read char
+case "$char" in
+  [a-z] )
+  echo "$char is lowecase";;
+  [A-Z] )
+  echo "$char is uppercase";;
+  [0-9] )
+  echo "$char is digit";;
+  ? )
+  echo "$char is character";;
+  *)
+  echo "Unknown input";;
 esac
