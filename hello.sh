@@ -1,16 +1,15 @@
 #!/bin/bash
-LANG=C;
-echo -e "Enter character: \c";
-read char
-case "$char" in
-  [a-z] )
-  echo "$char is lowecase";;
-  [A-Z] )
-  echo "$char is uppercase";;
-  [0-9] )
-  echo "$char is digit";;
-  ? )
-  echo "$char is character";;
-  *)
-  echo "Unknown input";;
-esac
+os=( 'windows' 'osx' 'linux');
+echo "Array = ${os[@]}";
+echo "Indexes = ${!os[@]}";
+echo "Length = ${#os[@]}";
+os[1]=mac;
+echo "Array = ${os[@]}";
+unset os[1];
+echo "Array = ${os[@]}";
+# Variables are array of one element
+var='How do u do?';
+echo "Varaible Array = ${var[@]}"
+echo "Variable Array Index = ${!var[@]}";
+echo "Varaible Array Length = ${#var[@]}"
+echo "Variable Array Oth Element = ${var[0]}"
