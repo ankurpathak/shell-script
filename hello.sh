@@ -1,3 +1,3 @@
 #!/bin/bash
-num=27
-a=$( bc -l <<< " scale=2; sqrt($num) " ); echo "$a"
+num=3
+a=$( bc -l <<< " scale=2; $num^4 " ); echo "$a"
