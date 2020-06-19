@@ -1,5 +1,7 @@
 #!/bin/bash
-while IFS=' '; read -r line;
+i=1;
+until [ "$i" -gt 10 ];
 do
-	echo "$line";
-done < hello.sh
+	echo "$i";
+	let "i++";
+done;
