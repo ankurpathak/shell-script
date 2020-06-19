@@ -1,5 +1,5 @@
 #!/bin/bash
-while read line;
+cat hello.sh | while read line;
 do
-  echo "$line";
-done < hello.sh;
+	echo "$line";
+done;
