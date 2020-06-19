@@ -1,5 +1,8 @@
 #!/bin/bash
-for (( i = 0; i < 10; i += 2))
+for item in *
 do
-	echo "$i";
+	if [ -d "$item" ];
+	then
+		echo "$item";
+	fi;
 done;
