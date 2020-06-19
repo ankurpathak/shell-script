@@ -1,7 +1,5 @@
 #!/bin/bash
-i=1
-while (( i < 10 ));
+while read line;
 do
-  echo "$i";
-  (( i++ ));
-done
+  echo "$line";
+done < hello.sh;
